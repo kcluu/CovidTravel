@@ -1,0 +1,62 @@
+[
+ {
+   "airlineName": "jetBlue",
+   "departureCode": "DCA",
+   "departureDateTime": "2021-07-22 at 08:00:00",
+   "cost": 179.00,
+   "arrivalCode": "BOS",
+   "arrivalDateTime": "2021-07-22 at 09:30:00",
+   "notes": "Remember to pack laptop, laptop charter, and phone charger. Bring business folder with paperwork.",
+   "purpose": "Business trip",
+   "photoFullFilename": "EmmasBoardingPass.jpg",
+   "airlineWebsite": "https://www.jetblue.com/"
+ },
+ {
+   "airlineName": "United Airlines",
+   "departureCode": "IAD",
+   "departureDateTime": "2021-05-15 at 07:40:00",
+   "cost": 278.00,
+   "arrivalCode": "IAH",
+   "arrivalDateTime": "2021-05-15 at 11:10:00",
+   "notes": "Seat 34F, Group 4, Gate D7",
+   "purpose": "Vacation",
+   "photoFullFilename": "AbbysDepartureBoardingPass.jpg",
+   "airlineWebsite": "https://www.united.com/"
+ },
+ {
+   "airlineName": "United Airlines",
+   "departureCode": "IAH",
+   "departureDateTime": "2021-05-22 at 13:40:00",
+   "cost": 0.00,
+   "arrivalCode": "IAD",
+   "arrivalDateTime": "2021-05-22 at 16:42:00",
+   "notes": "Don't forget to pack the souvenirs in a separate bag.",
+   "purpose": "Return home",
+   "photoFullFilename": "AbbysReturnBoardingPass.jpg",
+   "airlineWebsite": "https://www.united.com/"
+ },
+ {
+   "airlineName": "American Airlines",
+   "departureCode": "DCA",
+   "departureDateTime": "2021-04-27 at 08:33:00",
+   "cost": 254.00,
+   "arrivalCode": "VPS",
+   "arrivalDateTime": "2021-04-27 at 11:07:00",
+   "notes": "Staying at Four Points by Sheraton - Address: 1325 Miracle Strip Pkwy SE, Fort Walton Beach, FL 32548-6204",
+   "purpose": "Vacation",
+   "photoFullFilename": "CatsDepartureBoardingPass.jpg",
+   "airlineWebsite": "https://www.aa.com/"
+ },
+ {
+   "airlineName": "American Airlines",
+   "departureCode": "VPS",
+   "departureDateTime": "2021-04-30 at 10:29:00",
+   "cost": 0.00,
+   "arrivalCode": "DCA",
+   "arrivalDateTime": "2021-04-30 at 13:02:00",
+   "notes": "Gate B6, Seat 18F",
+   "purpose": "Return home",
+   "photoFullFilename": "CatsReturnBoardingPass.jpg",
+   "airlineWebsite": "https://www.aa.com/"
+ }
+]

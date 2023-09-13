@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4920C7FB263B073C0069CADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C7FA263B073C0069CADC /* AppDelegate.swift */; };
+		4920C7FD263B073C0069CADC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C7FC263B073C0069CADC /* SceneDelegate.swift */; };
+		4920C7FF263B073C0069CADC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C7FE263B073C0069CADC /* ContentView.swift */; };
+		4920C802263B073C0069CADC /* COVIDTravel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4920C800263B073C0069CADC /* COVIDTravel.xcdatamodeld */; };
+		4920C804263B07460069CADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4920C803263B07460069CADC /* Assets.xcassets */; };
+		4920C807263B07460069CADC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4920C806263B07460069CADC /* Preview Assets.xcassets */; };
+		4920C80A263B07460069CADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4920C808263B07460069CADC /* LaunchScreen.storyboard */; };
+		4920C81E263B0A050069CADC /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C81D263B0A050069CADC /* Airport.swift */; };
+		4920C822263B0A2F0069CADC /* Restrictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C821263B0A2F0069CADC /* Restrictions.swift */; };
+		4920C825263B0A460069CADC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C824263B0A460069CADC /* Home.swift */; };
+		4920C828263B0A590069CADC /* VaccinesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C827263B0A590069CADC /* VaccinesList.swift */; };
+		4920C82B263B0A610069CADC /* FindVaccines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C82A263B0A610069CADC /* FindVaccines.swift */; };
+		4920C82E263B0A690069CADC /* VaccineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C82D263B0A690069CADC /* VaccineItem.swift */; };
+		4920C831263B0A710069CADC /* VaccineDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C830263B0A710069CADC /* VaccineDetails.swift */; };
+		4920C834263B0A9B0069CADC /* StatisticItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C833263B0A9B0069CADC /* StatisticItem.swift */; };
+		4920C837263B0AA40069CADC /* StatisticsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C836263B0AA40069CADC /* StatisticsList.swift */; };
+		4920C83A263B0AAB0069CADC /* StatisticDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C839263B0AAB0069CADC /* StatisticDetail.swift */; };
+		4920C83D263B0ACA0069CADC /* Flights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C83C263B0ACA0069CADC /* Flights.swift */; };
+		4920C840263B0AD30069CADC /* SearchResultDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C83F263B0AD30069CADC /* SearchResultDetails.swift */; };
+		4920C843263B0ADB0069CADC /* SearchResultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C842263B0ADB0069CADC /* SearchResultItem.swift */; };
+		4920C846263B0AE50069CADC /* SearchResultsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C845263B0AE50069CADC /* SearchResultsList.swift */; };
+		4920C849263B0AF40069CADC /* BookAFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C848263B0AF40069CADC /* BookAFlight.swift */; };
+		4920C84C263B0AFD0069CADC /* SearchAirports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C84B263B0AFD0069CADC /* SearchAirports.swift */; };
+		4920C851263B0B720069CADC /* ApiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C850263B0B720069CADC /* ApiData.swift */; };
+		4920C855263B0B8C0069CADC /* StateRestrictionsApiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C854263B0B8C0069CADC /* StateRestrictionsApiData.swift */; };
+		4920C858263B0B9E0069CADC /* StateTimeseriesApiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C857263B0B9E0069CADC /* StateTimeseriesApiData.swift */; };
+		4920C85C263B0BB30069CADC /* NationwideApiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C85B263B0BB30069CADC /* NationwideApiData.swift */; };
+		4920C85F263B0BC20069CADC /* NationwideTimeseriesApiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C85E263B0BC20069CADC /* NationwideTimeseriesApiData.swift */; };
+		4920C862263B0C0A0069CADC /* StateApiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C861263B0C0A0069CADC /* StateApiData.swift */; };
+		4920C869263B0C2C0069CADC /* StatisticApiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C868263B0C2C0069CADC /* StatisticApiData.swift */; };
+		4920C86C263B0C430069CADC /* VaccineApiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C86B263B0C430069CADC /* VaccineApiData.swift */; };
+		4920C873263B0D510069CADC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C872263B0D510069CADC /* Helpers.swift */; };
+		4920C877263B0D6B0069CADC /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C876263B0D6B0069CADC /* IndicatorPoint.swift */; };
+		4920C87A263B0D730069CADC /* Legend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C879263B0D730069CADC /* Legend.swift */; };
+		4920C87D263B0D7A0069CADC /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C87C263B0D7A0069CADC /* Line.swift */; };
+		4920C880263B0D820069CADC /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C87F263B0D820069CADC /* LineChartView.swift */; };
+		4920C883263B0D8A0069CADC /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C882263B0D8A0069CADC /* LineView.swift */; };
+		4920C886263B0D930069CADC /* MagnifierRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C885263B0D930069CADC /* MagnifierRect.swift */; };
+		4920C889263B0D9D0069CADC /* MultiLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C888263B0D9D0069CADC /* MultiLineChartView.swift */; };
+		4920C88C263B0DA50069CADC /* Path+QuadCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C88B263B0DA50069CADC /* Path+QuadCurve.swift */; };
+		4920C88F263B0DBD0069CADC /* BarChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C88E263B0DBD0069CADC /* BarChartCell.swift */; };
+		4920C892263B0DC50069CADC /* BarChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C891263B0DC50069CADC /* BarChartRow.swift */; };
+		4920C895263B0DCE0069CADC /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C894263B0DCD0069CADC /* BarChartView.swift */; };
+		4920C899263B0DD40069CADC /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C898263B0DD40069CADC /* LabelView.swift */; };
+		4920C89C263B0DEA0069CADC /* PieSliceText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C89B263B0DEA0069CADC /* PieSliceText.swift */; };
+		4920C89F263B0DF10069CADC /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C89E263B0DF10069CADC /* PieChart.swift */; };
+		4920C8A2263B0DFB0069CADC /* PieSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8A1263B0DFB0069CADC /* PieSlice.swift */; };
+		4920C8A5263B0E070069CADC /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8A4263B0E070069CADC /* WebView.swift */; };
+		4920C8A8263B0E0E0069CADC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8A7263B0E0E0069CADC /* MapView.swift */; };
+		4920C8AB263B0E160069CADC /* NavigationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8AA263B0E160069CADC /* NavigationStyle.swift */; };
+		4920C8AE263B0E1E0069CADC /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8AD263B0E1E0069CADC /* SearchBar.swift */; };
+		4920C8B1263B0E260069CADC /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8B0263B0E260069CADC /* UtilityFunctions.swift */; };
+		4920C8B4263B0E2F0069CADC /* SearchResultsEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8B3263B0E2F0069CADC /* SearchResultsEmpty.swift */; };
+		4920C8B7263B0F2E0069CADC /* AirportData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8B6263B0F2E0069CADC /* AirportData.swift */; };
+		4920C8BA263B0F390069CADC /* AirportStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8B9263B0F390069CADC /* AirportStruct.swift */; };
+		4920C8BD263B0F420069CADC /* StateStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8BC263B0F420069CADC /* StateStruct.swift */; };
+		4920C8C0263B0F4E0069CADC /* StateTimeseriesStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8BF263B0F4E0069CADC /* StateTimeseriesStruct.swift */; };
+		4920C8C3263B0FC00069CADC /* StateApiStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8C2263B0FC00069CADC /* StateApiStruct.swift */; };
+		4920C8C6263B10040069CADC /* NationApiStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8C5263B10040069CADC /* NationApiStruct.swift */; };
+		4920C8C9263B100F0069CADC /* NationwideTimeseriesStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8C8263B100F0069CADC /* NationwideTimeseriesStruct.swift */; };
+		4920C8CC263B10170069CADC /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8CB263B10170069CADC /* UserData.swift */; };
+		4920C8CE263B101F0069CADC /* StatisticStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8CD263B101E0069CADC /* StatisticStruct.swift */; };
+		4920C8D1263B10290069CADC /* VaccineStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8D0263B10290069CADC /* VaccineStruct.swift */; };
+		4920C8D5263B11260069CADC /* AirportsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4920C8D4263B11260069CADC /* AirportsData.json */; };
+		4920C8D9263B13DC0069CADC /* PlannedFlightsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8D8263B13DC0069CADC /* PlannedFlightsList.swift */; };
+		4920C8DD263B19DA0069CADC /* PlannedFlightItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8DC263B19DA0069CADC /* PlannedFlightItem.swift */; };
+		4920C8E0263B19E70069CADC /* PlannedFlightDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8DF263B19E70069CADC /* PlannedFlightDetails.swift */; };
+		4920C8E3263B19F40069CADC /* ChangePlannedFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8E2263B19F40069CADC /* ChangePlannedFlight.swift */; };
+		4920C8E6263B19FC0069CADC /* AddPlannedFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8E5263B19FC0069CADC /* AddPlannedFlight.swift */; };
+		4920C8E9263B1A650069CADC /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8E8263B1A650069CADC /* Flight.swift */; };
+		4920C8EC263B1A6C0069CADC /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8EB263B1A6C0069CADC /* Photo.swift */; };
+		4920C8EF263B34940069CADC /* PlannedFlightsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4920C8EE263B34930069CADC /* PlannedFlightsData.json */; };
+		4920C8F2263B35D20069CADC /* PlannedFlightsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8F1263B35D20069CADC /* PlannedFlightsData.swift */; };
+		4920C8FA263B37010069CADC /* PlannedFlightStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8F9263B37010069CADC /* PlannedFlightStruct.swift */; };
+		4920C8FE263B4E8F0069CADC /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C8FD263B4E8F0069CADC /* PhotoCaptureView.swift */; };
+		4920C901263B4E980069CADC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920C900263B4E980069CADC /* ImagePicker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4920C7F7263B073C0069CADC /* COVIDTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVIDTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4920C7FA263B073C0069CADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4920C7FC263B073C0069CADC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4920C7FE263B073C0069CADC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4920C801263B073C0069CADC /* COVIDTravel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = COVIDTravel.xcdatamodel; sourceTree = "<group>"; };
+		4920C803263B07460069CADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4920C806263B07460069CADC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4920C809263B07460069CADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4920C80B263B07460069CADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4920C81D263B0A050069CADC /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		4920C821263B0A2F0069CADC /* Restrictions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restrictions.swift; sourceTree = "<group>"; };
+		4920C824263B0A460069CADC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		4920C827263B0A590069CADC /* VaccinesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinesList.swift; sourceTree = "<group>"; };
+		4920C82A263B0A610069CADC /* FindVaccines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindVaccines.swift; sourceTree = "<group>"; };
+		4920C82D263B0A690069CADC /* VaccineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineItem.swift; sourceTree = "<group>"; };
+		4920C830263B0A710069CADC /* VaccineDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineDetails.swift; sourceTree = "<group>"; };
+		4920C833263B0A9B0069CADC /* StatisticItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticItem.swift; sourceTree = "<group>"; };
+		4920C836263B0AA40069CADC /* StatisticsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsList.swift; sourceTree = "<group>"; };
+		4920C839263B0AAB0069CADC /* StatisticDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticDetail.swift; sourceTree = "<group>"; };
+		4920C83C263B0ACA0069CADC /* Flights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flights.swift; sourceTree = "<group>"; };
+		4920C83F263B0AD30069CADC /* SearchResultDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDetails.swift; sourceTree = "<group>"; };
+		4920C842263B0ADB0069CADC /* SearchResultItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultItem.swift; sourceTree = "<group>"; };
+		4920C845263B0AE50069CADC /* SearchResultsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsList.swift; sourceTree = "<group>"; };
+		4920C848263B0AF40069CADC /* BookAFlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAFlight.swift; sourceTree = "<group>"; };
+		4920C84B263B0AFD0069CADC /* SearchAirports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAirports.swift; sourceTree = "<group>"; };
+		4920C850263B0B720069CADC /* ApiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiData.swift; sourceTree = "<group>"; };
+		4920C854263B0B8C0069CADC /* StateRestrictionsApiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateRestrictionsApiData.swift; sourceTree = "<group>"; };
+		4920C857263B0B9E0069CADC /* StateTimeseriesApiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTimeseriesApiData.swift; sourceTree = "<group>"; };
+		4920C85B263B0BB30069CADC /* NationwideApiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationwideApiData.swift; sourceTree = "<group>"; };
+		4920C85E263B0BC20069CADC /* NationwideTimeseriesApiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationwideTimeseriesApiData.swift; sourceTree = "<group>"; };
+		4920C861263B0C0A0069CADC /* StateApiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateApiData.swift; sourceTree = "<group>"; };
+		4920C868263B0C2C0069CADC /* StatisticApiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticApiData.swift; sourceTree = "<group>"; };
+		4920C86B263B0C430069CADC /* VaccineApiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineApiData.swift; sourceTree = "<group>"; };
+		4920C872263B0D510069CADC /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		4920C876263B0D6B0069CADC /* IndicatorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorPoint.swift; sourceTree = "<group>"; };
+		4920C879263B0D730069CADC /* Legend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legend.swift; sourceTree = "<group>"; };
+		4920C87C263B0D7A0069CADC /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		4920C87F263B0D820069CADC /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		4920C882263B0D8A0069CADC /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		4920C885263B0D930069CADC /* MagnifierRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifierRect.swift; sourceTree = "<group>"; };
+		4920C888263B0D9D0069CADC /* MultiLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineChartView.swift; sourceTree = "<group>"; };
+		4920C88B263B0DA50069CADC /* Path+QuadCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Path+QuadCurve.swift"; sourceTree = "<group>"; };
+		4920C88E263B0DBD0069CADC /* BarChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartCell.swift; sourceTree = "<group>"; };
+		4920C891263B0DC50069CADC /* BarChartRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartRow.swift; sourceTree = "<group>"; };
+		4920C894263B0DCD0069CADC /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		4920C898263B0DD40069CADC /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		4920C89B263B0DEA0069CADC /* PieSliceText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSliceText.swift; sourceTree = "<group>"; };
+		4920C89E263B0DF10069CADC /* PieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
+		4920C8A1263B0DFB0069CADC /* PieSlice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSlice.swift; sourceTree = "<group>"; };
+		4920C8A4263B0E070069CADC /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		4920C8A7263B0E0E0069CADC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		4920C8AA263B0E160069CADC /* NavigationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStyle.swift; sourceTree = "<group>"; };
+		4920C8AD263B0E1E0069CADC /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		4920C8B0263B0E260069CADC /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
+		4920C8B3263B0E2F0069CADC /* SearchResultsEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsEmpty.swift; sourceTree = "<group>"; };
+		4920C8B6263B0F2E0069CADC /* AirportData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportData.swift; sourceTree = "<group>"; };
+		4920C8B9263B0F390069CADC /* AirportStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportStruct.swift; sourceTree = "<group>"; };
+		4920C8BC263B0F420069CADC /* StateStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateStruct.swift; sourceTree = "<group>"; };
+		4920C8BF263B0F4E0069CADC /* StateTimeseriesStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTimeseriesStruct.swift; sourceTree = "<group>"; };
+		4920C8C2263B0FC00069CADC /* StateApiStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateApiStruct.swift; sourceTree = "<group>"; };
+		4920C8C5263B10040069CADC /* NationApiStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationApiStruct.swift; sourceTree = "<group>"; };
+		4920C8C8263B100F0069CADC /* NationwideTimeseriesStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationwideTimeseriesStruct.swift; sourceTree = "<group>"; };
+		4920C8CB263B10170069CADC /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		4920C8CD263B101E0069CADC /* StatisticStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticStruct.swift; sourceTree = "<group>"; };
+		4920C8D0263B10290069CADC /* VaccineStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineStruct.swift; sourceTree = "<group>"; };
+		4920C8D4263B11260069CADC /* AirportsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AirportsData.json; sourceTree = "<group>"; };
+		4920C8D8263B13DC0069CADC /* PlannedFlightsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannedFlightsList.swift; sourceTree = "<group>"; };
+		4920C8DC263B19DA0069CADC /* PlannedFlightItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannedFlightItem.swift; sourceTree = "<group>"; };
+		4920C8DF263B19E70069CADC /* PlannedFlightDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannedFlightDetails.swift; sourceTree = "<group>"; };
+		4920C8E2263B19F40069CADC /* ChangePlannedFlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePlannedFlight.swift; sourceTree = "<group>"; };
+		4920C8E5263B19FC0069CADC /* AddPlannedFlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlannedFlight.swift; sourceTree = "<group>"; };
+		4920C8E8263B1A650069CADC /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		4920C8EB263B1A6C0069CADC /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		4920C8EE263B34930069CADC /* PlannedFlightsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PlannedFlightsData.json; sourceTree = "<group>"; };
+		4920C8F1263B35D20069CADC /* PlannedFlightsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannedFlightsData.swift; sourceTree = "<group>"; };
+		4920C8F9263B37010069CADC /* PlannedFlightStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannedFlightStruct.swift; sourceTree = "<group>"; };
+		4920C8FD263B4E8F0069CADC /* PhotoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
+		4920C900263B4E980069CADC /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4920C7F4263B073C0069CADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4920C7EE263B073C0069CADC = {
+			isa = PBXGroup;
+			children = (
+				4920C7F9263B073C0069CADC /* COVIDTravel */,
+				4920C7F8263B073C0069CADC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4920C7F8263B073C0069CADC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4920C7F7263B073C0069CADC /* COVIDTravel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4920C7F9263B073C0069CADC /* COVIDTravel */ = {
+			isa = PBXGroup;
+			children = (
+				4920C812263B09300069CADC /* Delegates */,
+				4920C814263B09520069CADC /* Core Data Model */,
+				4920C813263B09410069CADC /* Data Model */,
+				4920C815263B095C0069CADC /* Api Data */,
+				4920C817263B096F0069CADC /* Supporting Files */,
+				4920C816263B09630069CADC /* Tab Bar Views */,
+				4920C7FE263B073C0069CADC /* ContentView.swift */,
+				4920C803263B07460069CADC /* Assets.xcassets */,
+				4920C808263B07460069CADC /* LaunchScreen.storyboard */,
+				4920C80B263B07460069CADC /* Info.plist */,
+				4920C805263B07460069CADC /* Preview Content */,
+			);
+			path = COVIDTravel;
+			sourceTree = "<group>";
+		};
+		4920C805263B07460069CADC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4920C806263B07460069CADC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4920C812263B09300069CADC /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				4920C7FA263B073C0069CADC /* AppDelegate.swift */,
+				4920C7FC263B073C0069CADC /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		4920C813263B09410069CADC /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				4920C8D4263B11260069CADC /* AirportsData.json */,
+				4920C8B6263B0F2E0069CADC /* AirportData.swift */,
+				4920C8B9263B0F390069CADC /* AirportStruct.swift */,
+				4920C8BC263B0F420069CADC /* StateStruct.swift */,
+				4920C8BF263B0F4E0069CADC /* StateTimeseriesStruct.swift */,
+				4920C8C2263B0FC00069CADC /* StateApiStruct.swift */,
+				4920C8C5263B10040069CADC /* NationApiStruct.swift */,
+				4920C8C8263B100F0069CADC /* NationwideTimeseriesStruct.swift */,
+				4920C8CB263B10170069CADC /* UserData.swift */,
+				4920C8CD263B101E0069CADC /* StatisticStruct.swift */,
+				4920C8D0263B10290069CADC /* VaccineStruct.swift */,
+				4920C8EE263B34930069CADC /* PlannedFlightsData.json */,
+				4920C8F1263B35D20069CADC /* PlannedFlightsData.swift */,
+				4920C8F9263B37010069CADC /* PlannedFlightStruct.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		4920C814263B09520069CADC /* Core Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				4920C800263B073C0069CADC /* COVIDTravel.xcdatamodeld */,
+				4920C81D263B0A050069CADC /* Airport.swift */,
+				4920C8E8263B1A650069CADC /* Flight.swift */,
+				4920C8EB263B1A6C0069CADC /* Photo.swift */,
+			);
+			path = "Core Data Model";
+			sourceTree = "<group>";
+		};
+		4920C815263B095C0069CADC /* Api Data */ = {
+			isa = PBXGroup;
+			children = (
+				4920C850263B0B720069CADC /* ApiData.swift */,
+				4920C854263B0B8C0069CADC /* StateRestrictionsApiData.swift */,
+				4920C857263B0B9E0069CADC /* StateTimeseriesApiData.swift */,
+				4920C85B263B0BB30069CADC /* NationwideApiData.swift */,
+				4920C85E263B0BC20069CADC /* NationwideTimeseriesApiData.swift */,
+				4920C861263B0C0A0069CADC /* StateApiData.swift */,
+				4920C868263B0C2C0069CADC /* StatisticApiData.swift */,
+				4920C86B263B0C430069CADC /* VaccineApiData.swift */,
+			);
+			path = "Api Data";
+			sourceTree = "<group>";
+		};
+		4920C816263B09630069CADC /* Tab Bar Views */ = {
+			isa = PBXGroup;
+			children = (
+				4920C81C263B09C90069CADC /* Home */,
+				4920C81B263B09C50069CADC /* Statistics */,
+				4920C81A263B09C00069CADC /* Restrictions */,
+				4920C819263B09B70069CADC /* Flights */,
+				4920C818263B09A40069CADC /* Vaccines */,
+			);
+			path = "Tab Bar Views";
+			sourceTree = "<group>";
+		};
+		4920C817263B096F0069CADC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4920C871263B0D320069CADC /* PieChart */,
+				4920C86E263B0D230069CADC /* SwiftUICharts */,
+				4920C8A4263B0E070069CADC /* WebView.swift */,
+				4920C8A7263B0E0E0069CADC /* MapView.swift */,
+				4920C8AA263B0E160069CADC /* NavigationStyle.swift */,
+				4920C8AD263B0E1E0069CADC /* SearchBar.swift */,
+				4920C8B0263B0E260069CADC /* UtilityFunctions.swift */,
+				4920C8B3263B0E2F0069CADC /* SearchResultsEmpty.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4920C818263B09A40069CADC /* Vaccines */ = {
+			isa = PBXGroup;
+			children = (
+				4920C827263B0A590069CADC /* VaccinesList.swift */,
+				4920C82A263B0A610069CADC /* FindVaccines.swift */,
+				4920C82D263B0A690069CADC /* VaccineItem.swift */,
+				4920C830263B0A710069CADC /* VaccineDetails.swift */,
+			);
+			path = Vaccines;
+			sourceTree = "<group>";
+		};
+		4920C819263B09B70069CADC /* Flights */ = {
+			isa = PBXGroup;
+			children = (
+				4920C84E263B0B070069CADC /* Search Airports */,
+				4920C84F263B0B170069CADC /* Book a Flight */,
+				4920C8D7263B13880069CADC /* My Planned Flights */,
+			);
+			path = Flights;
+			sourceTree = "<group>";
+		};
+		4920C81A263B09C00069CADC /* Restrictions */ = {
+			isa = PBXGroup;
+			children = (
+				4920C821263B0A2F0069CADC /* Restrictions.swift */,
+			);
+			path = Restrictions;
+			sourceTree = "<group>";
+		};
+		4920C81B263B09C50069CADC /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				4920C833263B0A9B0069CADC /* StatisticItem.swift */,
+				4920C836263B0AA40069CADC /* StatisticsList.swift */,
+				4920C839263B0AAB0069CADC /* StatisticDetail.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		4920C81C263B09C90069CADC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4920C824263B0A460069CADC /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4920C84E263B0B070069CADC /* Search Airports */ = {
+			isa = PBXGroup;
+			children = (
+				4920C83C263B0ACA0069CADC /* Flights.swift */,
+				4920C83F263B0AD30069CADC /* SearchResultDetails.swift */,
+				4920C842263B0ADB0069CADC /* SearchResultItem.swift */,
+				4920C845263B0AE50069CADC /* SearchResultsList.swift */,
+				4920C84B263B0AFD0069CADC /* SearchAirports.swift */,
+			);
+			path = "Search Airports";
+			sourceTree = "<group>";
+		};
+		4920C84F263B0B170069CADC /* Book a Flight */ = {
+			isa = PBXGroup;
+			children = (
+				4920C848263B0AF40069CADC /* BookAFlight.swift */,
+			);
+			path = "Book a Flight";
+			sourceTree = "<group>";
+		};
+		4920C86E263B0D230069CADC /* SwiftUICharts */ = {
+			isa = PBXGroup;
+			children = (
+				4920C86F263B0D2A0069CADC /* LineChart */,
+				4920C870263B0D2E0069CADC /* BarChart */,
+				4920C872263B0D510069CADC /* Helpers.swift */,
+			);
+			path = SwiftUICharts;
+			sourceTree = "<group>";
+		};
+		4920C86F263B0D2A0069CADC /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				4920C876263B0D6B0069CADC /* IndicatorPoint.swift */,
+				4920C879263B0D730069CADC /* Legend.swift */,
+				4920C87C263B0D7A0069CADC /* Line.swift */,
+				4920C87F263B0D820069CADC /* LineChartView.swift */,
+				4920C882263B0D8A0069CADC /* LineView.swift */,
+				4920C885263B0D930069CADC /* MagnifierRect.swift */,
+				4920C888263B0D9D0069CADC /* MultiLineChartView.swift */,
+				4920C88B263B0DA50069CADC /* Path+QuadCurve.swift */,
+			);
+			path = LineChart;
+			sourceTree = "<group>";
+		};
+		4920C870263B0D2E0069CADC /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				4920C88E263B0DBD0069CADC /* BarChartCell.swift */,
+				4920C891263B0DC50069CADC /* BarChartRow.swift */,
+				4920C894263B0DCD0069CADC /* BarChartView.swift */,
+				4920C898263B0DD40069CADC /* LabelView.swift */,
+			);
+			path = BarChart;
+			sourceTree = "<group>";
+		};
+		4920C871263B0D320069CADC /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				4920C89B263B0DEA0069CADC /* PieSliceText.swift */,
+				4920C89E263B0DF10069CADC /* PieChart.swift */,
+				4920C8A1263B0DFB0069CADC /* PieSlice.swift */,
+			);
+			path = PieChart;
+			sourceTree = "<group>";
+		};
+		4920C8D7263B13880069CADC /* My Planned Flights */ = {
+			isa = PBXGroup;
+			children = (
+				4920C8FC263B4E630069CADC /* Take or Pick Photo */,
+				4920C8D8263B13DC0069CADC /* PlannedFlightsList.swift */,
+				4920C8DC263B19DA0069CADC /* PlannedFlightItem.swift */,
+				4920C8DF263B19E70069CADC /* PlannedFlightDetails.swift */,
+				4920C8E2263B19F40069CADC /* ChangePlannedFlight.swift */,
+				4920C8E5263B19FC0069CADC /* AddPlannedFlight.swift */,
+			);
+			path = "My Planned Flights";
+			sourceTree = "<group>";
+		};
+		4920C8FC263B4E630069CADC /* Take or Pick Photo */ = {
+			isa = PBXGroup;
+			children = (
+				4920C8FD263B4E8F0069CADC /* PhotoCaptureView.swift */,
+				4920C900263B4E980069CADC /* ImagePicker.swift */,
+			);
+			path = "Take or Pick Photo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4920C7F6263B073C0069CADC /* COVIDTravel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4920C80E263B07460069CADC /* Build configuration list for PBXNativeTarget "COVIDTravel" */;
+			buildPhases = (
+				4920C7F3263B073C0069CADC /* Sources */,
+				4920C7F4263B073C0069CADC /* Frameworks */,
+				4920C7F5263B073C0069CADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = COVIDTravel;
+			productName = COVIDTravel;
+			productReference = 4920C7F7263B073C0069CADC /* COVIDTravel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4920C7EF263B073C0069CADC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "Team 1";
+				TargetAttributes = {
+					4920C7F6263B073C0069CADC = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 4920C7F2263B073C0069CADC /* Build configuration list for PBXProject "COVIDTravel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4920C7EE263B073C0069CADC;
+			productRefGroup = 4920C7F8263B073C0069CADC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4920C7F6263B073C0069CADC /* COVIDTravel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4920C7F5263B073C0069CADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4920C80A263B07460069CADC /* LaunchScreen.storyboard in Resources */,
+				4920C807263B07460069CADC /* Preview Assets.xcassets in Resources */,
+				4920C804263B07460069CADC /* Assets.xcassets in Resources */,
+				4920C8EF263B34940069CADC /* PlannedFlightsData.json in Resources */,
+				4920C8D5263B11260069CADC /* AirportsData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4920C7F3263B073C0069CADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4920C8BA263B0F390069CADC /* AirportStruct.swift in Sources */,
+				4920C8CE263B101F0069CADC /* StatisticStruct.swift in Sources */,
+				4920C837263B0AA40069CADC /* StatisticsList.swift in Sources */,
+				4920C85F263B0BC20069CADC /* NationwideTimeseriesApiData.swift in Sources */,
+				4920C880263B0D820069CADC /* LineChartView.swift in Sources */,
+				4920C81E263B0A050069CADC /* Airport.swift in Sources */,
+				4920C83D263B0ACA0069CADC /* Flights.swift in Sources */,
+				4920C8AE263B0E1E0069CADC /* SearchBar.swift in Sources */,
+				4920C86C263B0C430069CADC /* VaccineApiData.swift in Sources */,
+				4920C8E9263B1A650069CADC /* Flight.swift in Sources */,
+				4920C8C6263B10040069CADC /* NationApiStruct.swift in Sources */,
+				4920C8A5263B0E070069CADC /* WebView.swift in Sources */,
+				4920C858263B0B9E0069CADC /* StateTimeseriesApiData.swift in Sources */,
+				4920C8D1263B10290069CADC /* VaccineStruct.swift in Sources */,
+				4920C8E6263B19FC0069CADC /* AddPlannedFlight.swift in Sources */,
+				4920C895263B0DCE0069CADC /* BarChartView.swift in Sources */,
+				4920C8D9263B13DC0069CADC /* PlannedFlightsList.swift in Sources */,
+				4920C8AB263B0E160069CADC /* NavigationStyle.swift in Sources */,
+				4920C8A8263B0E0E0069CADC /* MapView.swift in Sources */,
+				4920C889263B0D9D0069CADC /* MultiLineChartView.swift in Sources */,
+				4920C869263B0C2C0069CADC /* StatisticApiData.swift in Sources */,
+				4920C834263B0A9B0069CADC /* StatisticItem.swift in Sources */,
+				4920C873263B0D510069CADC /* Helpers.swift in Sources */,
+				4920C7FB263B073C0069CADC /* AppDelegate.swift in Sources */,
+				4920C84C263B0AFD0069CADC /* SearchAirports.swift in Sources */,
+				4920C82E263B0A690069CADC /* VaccineItem.swift in Sources */,
+				4920C88C263B0DA50069CADC /* Path+QuadCurve.swift in Sources */,
+				4920C8CC263B10170069CADC /* UserData.swift in Sources */,
+				4920C8E3263B19F40069CADC /* ChangePlannedFlight.swift in Sources */,
+				4920C85C263B0BB30069CADC /* NationwideApiData.swift in Sources */,
+				4920C901263B4E980069CADC /* ImagePicker.swift in Sources */,
+				4920C89F263B0DF10069CADC /* PieChart.swift in Sources */,
+				4920C8B4263B0E2F0069CADC /* SearchResultsEmpty.swift in Sources */,
+				4920C87D263B0D7A0069CADC /* Line.swift in Sources */,
+				4920C862263B0C0A0069CADC /* StateApiData.swift in Sources */,
+				4920C88F263B0DBD0069CADC /* BarChartCell.swift in Sources */,
+				4920C8E0263B19E70069CADC /* PlannedFlightDetails.swift in Sources */,
+				4920C8F2263B35D20069CADC /* PlannedFlightsData.swift in Sources */,
+				4920C8BD263B0F420069CADC /* StateStruct.swift in Sources */,
+				4920C89C263B0DEA0069CADC /* PieSliceText.swift in Sources */,
+				4920C8FA263B37010069CADC /* PlannedFlightStruct.swift in Sources */,
+				4920C892263B0DC50069CADC /* BarChartRow.swift in Sources */,
+				4920C8C0263B0F4E0069CADC /* StateTimeseriesStruct.swift in Sources */,
+				4920C877263B0D6B0069CADC /* IndicatorPoint.swift in Sources */,
+				4920C83A263B0AAB0069CADC /* StatisticDetail.swift in Sources */,
+				4920C8FE263B4E8F0069CADC /* PhotoCaptureView.swift in Sources */,
+				4920C822263B0A2F0069CADC /* Restrictions.swift in Sources */,
+				4920C7FD263B073C0069CADC /* SceneDelegate.swift in Sources */,
+				4920C8B7263B0F2E0069CADC /* AirportData.swift in Sources */,
+				4920C8C3263B0FC00069CADC /* StateApiStruct.swift in Sources */,
+				4920C82B263B0A610069CADC /* FindVaccines.swift in Sources */,
+				4920C855263B0B8C0069CADC /* StateRestrictionsApiData.swift in Sources */,
+				4920C87A263B0D730069CADC /* Legend.swift in Sources */,
+				4920C886263B0D930069CADC /* MagnifierRect.swift in Sources */,
+				4920C843263B0ADB0069CADC /* SearchResultItem.swift in Sources */,
+				4920C831263B0A710069CADC /* VaccineDetails.swift in Sources */,
+				4920C846263B0AE50069CADC /* SearchResultsList.swift in Sources */,
+				4920C7FF263B073C0069CADC /* ContentView.swift in Sources */,
+				4920C8EC263B1A6C0069CADC /* Photo.swift in Sources */,
+				4920C8A2263B0DFB0069CADC /* PieSlice.swift in Sources */,
+				4920C8B1263B0E260069CADC /* UtilityFunctions.swift in Sources */,
+				4920C828263B0A590069CADC /* VaccinesList.swift in Sources */,
+				4920C802263B073C0069CADC /* COVIDTravel.xcdatamodeld in Sources */,
+				4920C899263B0DD40069CADC /* LabelView.swift in Sources */,
+				4920C825263B0A460069CADC /* Home.swift in Sources */,
+				4920C840263B0AD30069CADC /* SearchResultDetails.swift in Sources */,
+				4920C8DD263B19DA0069CADC /* PlannedFlightItem.swift in Sources */,
+				4920C849263B0AF40069CADC /* BookAFlight.swift in Sources */,
+				4920C883263B0D8A0069CADC /* LineView.swift in Sources */,
+				4920C8C9263B100F0069CADC /* NationwideTimeseriesStruct.swift in Sources */,
+				4920C851263B0B720069CADC /* ApiData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4920C808263B07460069CADC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4920C809263B07460069CADC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4920C80C263B07460069CADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4920C80D263B07460069CADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4920C80F263B07460069CADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"COVIDTravel/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = COVIDTravel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.katelynluu.COVIDTravel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4920C810263B07460069CADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"COVIDTravel/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = COVIDTravel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.katelynluu.COVIDTravel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4920C7F2263B073C0069CADC /* Build configuration list for PBXProject "COVIDTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4920C80C263B07460069CADC /* Debug */,
+				4920C80D263B07460069CADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4920C80E263B07460069CADC /* Build configuration list for PBXNativeTarget "COVIDTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4920C80F263B07460069CADC /* Debug */,
+				4920C810263B07460069CADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4920C800263B073C0069CADC /* COVIDTravel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4920C801263B073C0069CADC /* COVIDTravel.xcdatamodel */,
+			);
+			currentVersion = 4920C801263B073C0069CADC /* COVIDTravel.xcdatamodel */;
+			path = COVIDTravel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4920C7EF263B073C0069CADC /* Project object */;
+}
